@@ -6,7 +6,7 @@ RUN mkdir src
 WORKDIR /src
 
 # copy python requirements into docker container
-COPY ./requirements.txt ./
+COPY requirements.txt src/
 
 # install jupyter notebook for data analysis
 RUN pip3 install notebook
